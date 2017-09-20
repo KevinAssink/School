@@ -4,7 +4,7 @@ import java.awt.*;
 import java.applet.*;
 import java.util.Random;
 
-public class Dobbelsteen extends Applet {
+public class Opdracht7 extends Applet {
 
 
     public void init() {

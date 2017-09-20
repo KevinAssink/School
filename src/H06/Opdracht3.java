@@ -4,7 +4,7 @@ import java.awt.*;
 import java.applet.*;
 
 
-public class PositieveEnNegatieveInt extends Applet {
+public class Opdracht3 extends Applet {
     int cijfera;
     int cijferb;
     int uitkomst;

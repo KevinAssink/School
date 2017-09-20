@@ -4,7 +4,7 @@ import java.awt.*;
 import java.applet.*;
 import java.util.Random;
 
-public class Huis extends Applet {
+public class Opdracht1En2En3 extends Applet {
 
 
     public void init() {

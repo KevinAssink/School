@@ -4,7 +4,7 @@ import java.awt.*;
 import java.applet.*;
 
 
-public class TijdenEnDagen extends Applet {
+public class Opdracht2 extends Applet {
     int uur, dag, jaar, uitkomst;
 
 
@@ -12,7 +12,7 @@ public class TijdenEnDagen extends Applet {
         uitkomst = (60);
         uur = uitkomst * 60;
         dag = uitkomst * 60 * 24;
-        jaar = uitkomst * 60 * 24 * 365 ;
+        jaar = dag * 365 ;
 
     }
 

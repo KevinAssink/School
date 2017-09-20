@@ -4,7 +4,7 @@ import java.awt.*;
 import java.applet.*;
 import java.util.Random;
 
-public class Staafdiagram extends Applet {
+public class Opdracht4 extends Applet {
 
 
     public void init() {

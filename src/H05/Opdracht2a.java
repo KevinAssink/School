@@ -3,7 +3,7 @@ package H05;
 import java.applet.Applet;
 import java.awt.*;
 
-public class Variable2 extends Applet {
+public class Opdracht2a extends Applet {
 
     int weide;
     int jeroen;

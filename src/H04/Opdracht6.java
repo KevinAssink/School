@@ -4,7 +4,7 @@ import java.awt.*;
 import java.applet.*;
 import java.util.Random;
 
-public class Stoplicht extends Applet {
+public class Opdracht6 extends Applet {
 
 
     public void init() {

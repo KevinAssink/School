@@ -4,7 +4,7 @@ import java.awt.*;
 import java.applet.*;
 
 
-public class Geldverdelen extends Applet {
+public class Opdracht1 extends Applet {
     double geldjan, geldjabir, geldali, geldjeannette,aantalpersonen, uitkomst;
 
 

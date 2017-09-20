@@ -3,7 +3,7 @@ package H05;
 import java.awt.*;
 import java.applet.*;
 
-public class Variable1 extends Applet{
+public class Opdracht1 extends Applet{
     //declaratie.
     Color opvulkleur;
     Color lijnkleur;

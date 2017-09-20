@@ -4,7 +4,7 @@ import java.awt.*;
 import java.applet.*;
 import java.util.Random;
 
-public class PraktijkOpdracht extends Applet {
+public class PraktijkOpdrachtH4 extends Applet {
 
 
     public void init() {

@@ -4,7 +4,7 @@ import java.awt.*;
 import java.applet.*;
 
 
-public class PraktijdOpdracht6 extends Applet {
+public class PraktijdOpdrachtH6 extends Applet {
     double cijfer1, cijfer2, cijfer3,cijfer4,cijfer5, uitkomst, cijfer7, cijfer6;
 
 
