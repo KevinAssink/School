@@ -3,6 +3,7 @@ package H10;
 import java.applet.Applet;
 import java.awt.*;
 import java.awt.event.*;
+import java.util.ArrayList;
 
 public class Opdracht3En4 extends Applet {
     TextField tekstvak, tekstvak2;
@@ -11,8 +12,8 @@ public class Opdracht3En4 extends Applet {
     int maand, jaartal;
 
 
-
     public void init() {
+        this.setSize(700,100);
         tekstvak = new TextField("", 15);
         label = new Label("Type een maand nummer en druk op enter");
         tekstvak.addActionListener(new TekstvakListener());
@@ -29,12 +30,28 @@ public class Opdracht3En4 extends Applet {
 
 
     public void paint(Graphics g) {
-        g.drawString(tekst,20,80);
-        g.drawString(tekst2,20,100);
+        this.setSize(700,100);
+        if (tekst != null && tekst2 != null) {
+            g.drawString(tekst, 20, 80);
+            g.drawString(tekst2, 170, 80);
+        }
+
 
     }
     class TekstvakListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
+            d = tekstvak2.getText();
+            int dagen_feb = 28;
+            jaartal = Integer.parseInt( d );
+            if ( (jaartal % 4 == 0 && !(jaartal % 100 == 0)) ||
+                    jaartal % 400 == 0 ) {
+                tekst2 = ""+ jaartal + " is een schrikkeljaar";
+                dagen_feb = 29;
+            }
+            else {
+                tekst2 = ""+ jaartal + " is geen schrikkeljaar";
+            }
+
             s = tekstvak.getText();
             maand = Integer.parseInt(s);
             switch (maand) {
@@ -42,7 +59,7 @@ public class Opdracht3En4 extends Applet {
                     tekst = "Januari    31 Dagen";
                     break;
                 case 2:
-                    tekst = "Februari   28/29 Dagen";
+                    tekst = "Februari   "+ dagen_feb +" Dagen";
                     break;
                 case 3:
                     tekst = "Maart      31 Dagen";
@@ -77,16 +94,6 @@ public class Opdracht3En4 extends Applet {
                 default:
                     tekst = "Alleen nummers tot en met 12 gelden ..!";
                     break;
-            }
-            repaint();
-            d = tekstvak2.getText();
-            jaartal = Integer.parseInt( d );
-            if ( (jaartal % 4 == 0 && !(jaartal % 100 == 0)) ||
-                    jaartal % 400 == 0 ) {
-                tekst2 = ""+ jaartal + " is een schrikkeljaar";
-            }
-            else {
-                tekst2 = ""+ jaartal + " is geen schrikkeljaar";
             }
             repaint();
         }
